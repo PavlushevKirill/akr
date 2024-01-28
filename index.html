@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,31 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <form >
-        <label for="">name</label><br>
-        <input type="text" id="name" required><br>
-        <label for="">email</label><br>
-        <input type="email" id="email"><br>
-        <label for="">town</label><br>
-        <select id="town" id="town">
-            <option value=""selected hidden>select your town</option>
-            <option value="">Moskow</option>
-            <option value="">St.Petersburg</option>
-            <option value="">none</option>
-        </select><br>
-        <label for="">gender</label><br>
-        <div class="">
-            <input type="radio" value="men" id="men">
-            <input type="radio" value="voman" id="voman"><br>
-        </div>
-        
-        <input type="password" id="password"><br>
-        <button type="submit" id="submit">Go!</button>
-    </form>
+    <div id="conteiner">
+        <form id="firstForm">
+            <input type="text" id="name" placeholder="name" required><br>
+            <input type="email" id="email" placeholder="email" required><br>
+            <select id="town" required>
+                <option value="" selected hidden>select your town</option>
+                <option value="Moskow">Moskow</option>
+                <option value="St.Petersburg">St.Petersburg</option>
+                <option value="none">none</option>
+            </select><br>
+            <input type="password" id="password" placeholder="password" required>
+            <input type="password" id="password2" placeholder="password" required><br>
+            <button type="submit" id="submit">Go!</button>
+        </form>
+        <form id="secondForm">
+            <input type="text" id="name2" placeholder="name" required><br>
+            <input type="email" id="email2" placeholder="email" required><br>
+            <input type="password" id="password12" placeholder="password" required>
+            <button type="submit" id="submit2">Go!</button>
+        </form>
+        <button id="change">change form</button>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
